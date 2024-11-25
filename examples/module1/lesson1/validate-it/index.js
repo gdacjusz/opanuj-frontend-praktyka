@@ -5,9 +5,12 @@ function validator() {
   const result = document.getElementById('result');
 
   button.addEventListener('click', () => {
+    console.log(input.value);
     if (input.value) {
       if (Number.isInteger(input.value)) {
+        console.log("is integer");
         if (
+          
           Number(input.value) > 0 &&
           Number(input.value) < 100 &&
           Number(input.value) % 2 === 0
